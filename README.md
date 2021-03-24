@@ -1,13 +1,14 @@
 # Flutter sample JPV
+These examples are made to help everyone grow in flutter and see a little of everything we can create with this beautiful tool,
+you can use the repository for whatever you want, if you like it, leave a star.
 
-A new Flutter project.
-Estos ejemplos estan realizado con Flutter 2.0.1 e utilizando Null Safety
-Conforme pase el tiempo vamos a ir creando más contenido en este mismo proyecto.
-A seguir aleteando
+Estos ejemplos son realizados para el apoyo a crecer todos en flutter y ver un poco de todo lo quen podemos crear con esta hermosa herramienta,  
+puedes utilizar el repositorio para lo que desees, si te gusta, deja una estrella.
 
+|Person Search - Consuming Un Api |  App Delivery Food |
+|------------|-------------|
+|![file](https://user-images.githubusercontent.com/42988089/110570942-c642bb80-8124-11eb-9ad3-c1244f1d43e4.gif) | ![food](https://user-images.githubusercontent.com/42988089/112217689-d365ad00-8bf0-11eb-9d09-a8ea7b8df56a.gif)|
 
-![file](https://user-images.githubusercontent.com/42988089/110570942-c642bb80-8124-11eb-9ad3-c1244f1d43e4.gif)
-Person Search - consuming an api
 
 ## Getting Started
 
