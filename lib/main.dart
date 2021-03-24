@@ -3,8 +3,13 @@ import 'package:flutter/services.dart';
 import 'package:flutter_sample_jpv/src/UI/ui_Home.dart';
 import 'package:flutter_sample_jpv/src/Widgets/CardButton.dart';
 
-void main() {
+void main() { 
   runApp(MyApp());
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitDown,
+     DeviceOrientation.portraitUp,
+  ]
+  );
 }
 
 class MyApp extends StatelessWidget {

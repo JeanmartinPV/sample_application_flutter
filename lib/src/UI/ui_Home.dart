@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_sample_jpv/src/UI/Food_Delivery/init_home_delivery.dart';
 import 'package:flutter_sample_jpv/src/UI/Person_Search/home_page_person_search.dart';
 import 'package:flutter_sample_jpv/src/UI/Person_Search/init.dart';
 import 'package:flutter_sample_jpv/src/Widgets/CardButton.dart';
@@ -33,6 +34,14 @@ class _UiFlutterState extends State<UiFlutter> {
                 onCardTap(InitPersonSearch());
               },
             url: 'assets/person_search/machu_picchu.png',
+          ),
+          CardButtom(
+            title: 'Food Delivery',
+            description: 'Search for records in reniec',
+            actionTap: () {
+                onCardTap(InitHomeDelivery());
+              },
+            url: 'assets/food_delivery/background_delivery.png',
           ),
         ],
       )

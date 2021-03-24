@@ -25,7 +25,7 @@ class CardButtom extends StatelessWidget {
               placeholder: AssetImage('assets/images/loadingpoint.gif'),
               image: AssetImage(url ?? 'assets/images/fluter_day.jpg'),
               fadeInDuration: Duration(milliseconds: 200),
-              fit: BoxFit.cover,
+               fit: BoxFit.fill,
               width: double.infinity,
             ),
           ),
@@ -35,43 +35,51 @@ class CardButtom extends StatelessWidget {
               padding: EdgeInsets.all(10.0),
               child: Row(
                 children: [
-                  IconButton(
-                      icon: Icon(
-                        Icons.favorite_border,
-                        color: Colors.white,
+                  Expanded(
+                          child: IconButton(
+                        icon: Icon(
+                          Icons.favorite_border,
+                          color: Colors.white,
+                        ),
+                        onPressed: () {}),
+                  ),
+                  Container(
+                    padding: EdgeInsets.only(left: 20),
+                                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            title,
+                            overflow: TextOverflow.ellipsis,
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 22.0,
+                                fontWeight: FontWeight.w400,
+                                letterSpacing: 1.0,
+                                ),
+                          ),
+                          Text(
+                            description,
+                            overflow: TextOverflow.ellipsis,
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18.0,
+                                fontWeight: FontWeight.w300),
+                          ),
+                        ],
                       ),
-                      onPressed: () {}),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        title,
-                        overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 22.0,
-                            fontWeight: FontWeight.w400,
-                            letterSpacing: 1.0,
-                            ),
-                      ),
-                      Text(
-                        description,
-                        overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 18.0,
-                            fontWeight: FontWeight.w300),
-                      ),
-                    ],
                   ),
                   Spacer(),
-                  IconButton(
-                      icon: Icon(
-                        Icons.chevron_right_outlined,
-                        color: Colors.white,
-                        size: 35.0,
-                      ),
-                      onPressed: () {}),
+                  Expanded(
+                    flex: 2,
+                                      child: IconButton(
+                        icon: Icon(
+                          Icons.chevron_right_outlined,
+                          color: Colors.white,
+                          size: 35.0,
+                        ),
+                        onPressed: () {}),
+                  ),
                 ],
               ),
             ),

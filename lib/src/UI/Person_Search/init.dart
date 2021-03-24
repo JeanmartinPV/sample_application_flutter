@@ -19,7 +19,6 @@ class _InitPersonSearchState extends State<InitPersonSearch> {
           ChangeNotifierProvider(create: (_)=> Services())
         ],
         child: MaterialApp(
-          
               debugShowCheckedModeBanner: false,
               theme: ThemeData.light( 
               ).copyWith(

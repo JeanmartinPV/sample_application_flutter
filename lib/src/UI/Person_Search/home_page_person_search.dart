@@ -71,14 +71,14 @@ class _HomePersonSearchState extends State<HomePersonSearch> {
               ),
             ),
             Expanded(
-                flex: 4,
+                flex: 6,
                 child: Container(
                   width: double.infinity,
                   color: Color(0xff001D2E),
                   child: Column(
                     children: [
                       Expanded(
-                        flex: 120,
+                        flex: 150,
                         child: Container(
                           padding: EdgeInsets.all(10.0),
                           alignment: Alignment.centerLeft,
@@ -105,7 +105,7 @@ class _HomePersonSearchState extends State<HomePersonSearch> {
                         ),
                       ),
                       Expanded(
-                        flex: 320,
+                        flex: 420,
                         child: Container(
                           padding: EdgeInsets.symmetric(
                               vertical: 10, horizontal: 15),
