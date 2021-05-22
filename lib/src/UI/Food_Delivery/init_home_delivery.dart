@@ -14,10 +14,6 @@ class _InitHomeDeliveryState extends State<InitHomeDelivery> {
   Widget build(BuildContext context) {
       return  MaterialApp(
               debugShowCheckedModeBanner: false,
-              // theme: ThemeData.light( 
-              // ).copyWith(
-              //   accentColor: Color(0xff00111C)
-              // ),
               home: HomeDelivery(),  
       );
   }

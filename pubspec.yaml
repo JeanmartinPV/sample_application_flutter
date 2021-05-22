@@ -51,6 +51,7 @@ flutter:
     - assets/images/
     - assets/person_search/
     - assets/food_delivery/
+    - assets/boats/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
