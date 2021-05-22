@@ -46,7 +46,7 @@ class _UiFlutterState extends State<UiFlutter> {
           ),
            CardButtom(
             title: 'List Boat',
-            description: 'Animated ship list',
+            description: 'Animated Ship list',
             actionTap: () {
                 onCardTap(HomeBoatChallenge());
               },
