@@ -45,7 +45,7 @@ class _UiFlutterState extends State<UiFlutter> {
             url: 'assets/food_delivery/background_delivery.png',
           ),
            CardButtom(
-            title: 'List Boat',
+            title: 'List Boats',
             description: 'Animated Ship List',
             actionTap: () {
                 onCardTap(HomeBoatChallenge());
