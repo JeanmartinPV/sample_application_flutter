@@ -25,7 +25,7 @@ class CardButtom extends StatelessWidget {
               placeholder: AssetImage('assets/images/loadingpoint.gif'),
               image: AssetImage(url ?? 'assets/images/fluter_day.jpg'),
               fadeInDuration: Duration(milliseconds: 200),
-               fit: BoxFit.fill,
+              fit: BoxFit.fill,
               width: double.infinity,
             ),
           ),
@@ -36,7 +36,7 @@ class CardButtom extends StatelessWidget {
               child: Row(
                 children: [
                   Expanded(
-                          child: IconButton(
+                    child: IconButton(
                         icon: Icon(
                           Icons.favorite_border,
                           color: Colors.white,
@@ -45,34 +45,36 @@ class CardButtom extends StatelessWidget {
                   ),
                   Container(
                     padding: EdgeInsets.only(left: 20),
-                                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            title,
-                            overflow: TextOverflow.ellipsis,
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 22.0,
-                                fontWeight: FontWeight.w400,
-                                letterSpacing: 1.0,
-                                ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          title,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 22.0,
+                            fontWeight: FontWeight.w400,
+                            letterSpacing: 1.0,
                           ),
-                          Text(
-                            description,
-                            overflow: TextOverflow.ellipsis,
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 18.0,
-                                fontWeight: FontWeight.w300),
+                        ),
+                        Text(
+                          description,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.w300,
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
+                    ),
                   ),
                   Spacer(),
                   Expanded(
                     flex: 2,
-                                      child: IconButton(
+                    child: IconButton(
                         icon: Icon(
                           Icons.chevron_right_outlined,
                           color: Colors.white,
@@ -99,9 +101,7 @@ class CardButtom extends StatelessWidget {
           borderRadius: borderRadiusButton,
           onTap: actionTap,
           child: Container(
-            alignment: Alignment.center,
-            width: 250.0,
-            height: 310.0,
+            height: 320.0,
             child:
                 ClipRRect(borderRadius: borderRadiusButton, child: informacion),
           ),
