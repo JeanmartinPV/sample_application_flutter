@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sample_jpv/src/UI/Food_Delivery/init_home_delivery.dart';
-import 'package:flutter_sample_jpv/src/UI/Person_Search/home_page_person_search.dart';
 import 'package:flutter_sample_jpv/src/UI/Person_Search/init.dart';
 import 'package:flutter_sample_jpv/src/UI/Sliver_Card_Animation/home_challenge_sliver.dart';
 import 'package:flutter_sample_jpv/src/UI/challenge_boats/home_boat.dart';
+import 'package:flutter_sample_jpv/src/UI/nike_shoes/pages/home_page.dart';
 import 'package:flutter_sample_jpv/src/Widgets/CardButton.dart';
 
 class UiFlutter extends StatefulWidget {
@@ -56,6 +56,14 @@ class _UiFlutterState extends State<UiFlutter> {
                 onCardTap(HomeSliverChallenge());
               },
               url: 'assets/sliver/sliver_challenge.jpg',
+            ),
+            CardButtom(
+              title: 'Nikes Shoes',
+              description: 'Shoes list animation',
+              actionTap: () {
+                onCardTap(HomePageShoes());
+              },
+              url: 'assets/shoes/background_shoes.png',
             ),
           ],
         ));
