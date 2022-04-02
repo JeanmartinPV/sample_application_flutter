@@ -29,21 +29,20 @@ class CardButtom extends StatelessWidget {
               width: double.infinity,
             ),
           ),
-          Expanded(
-            child: Container(
-              color: Colors.blue,
-              padding: EdgeInsets.all(10.0),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: IconButton(
-                        icon: Icon(
-                          Icons.favorite_border,
-                          color: Colors.white,
-                        ),
-                        onPressed: () {}),
-                  ),
-                  Container(
+          Container(
+            color: Colors.blue,
+            padding: EdgeInsets.all(10.0),
+            child: Row(
+              children: [
+                IconButton(
+                    icon: Icon(
+                      Icons.favorite_border,
+                      color: Colors.white,
+                    ),
+                    onPressed: () {}),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: Container(
                     padding: EdgeInsets.only(left: 20),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -51,7 +50,6 @@ class CardButtom extends StatelessWidget {
                       children: [
                         Text(
                           title,
-                          overflow: TextOverflow.ellipsis,
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 22.0,
@@ -61,7 +59,6 @@ class CardButtom extends StatelessWidget {
                         ),
                         Text(
                           description,
-                          overflow: TextOverflow.ellipsis,
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 18.0,
@@ -71,19 +68,16 @@ class CardButtom extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Spacer(),
-                  Expanded(
-                    flex: 2,
-                    child: IconButton(
-                        icon: Icon(
-                          Icons.chevron_right_outlined,
-                          color: Colors.white,
-                          size: 35.0,
-                        ),
-                        onPressed: () {}),
+                ),
+                IconButton(
+                  icon: Icon(
+                    Icons.chevron_right_outlined,
+                    color: Colors.white,
+                    size: 35.0,
                   ),
-                ],
-              ),
+                  onPressed: () {},
+                ),
+              ],
             ),
           ),
         ],

@@ -1,4 +1,3 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_sample_jpv/src/UI/challenge_boats/data.dart';
 
@@ -115,7 +114,6 @@ class _HomeBoatChallengeState extends State<HomeBoatChallenge>
                   final opacity = 1 - value.clamp(0, 1);
                   final scale = 1 - value.clamp(0, 0.2);
 
- 
                   final boat = Boat.listBoat[index];
                   return Container(
                       child: Stack(
@@ -143,11 +141,18 @@ class _HomeBoatChallengeState extends State<HomeBoatChallenge>
                                             transform: Matrix4.identity()
                                               ..scale(scale)
                                               ..rotateZ(
-                                                  (-1.55 * valueAnimation).toDouble(),)
+                                                (-1.55 * valueAnimation)
+                                                    .toDouble(),
+                                              )
                                               ..leftTranslate(
-                                                  (-(size.width * 0.8) *
-                                                      valueAnimation).toDouble(),),
-                                            child: _ImageBoat(boat: boat, isDark: _isDark, size: size)),
+                                                (-(size.width * 0.8) *
+                                                        valueAnimation)
+                                                    .toDouble(),
+                                              ),
+                                            child: _ImageBoat(
+                                                boat: boat,
+                                                isDark: _isDark,
+                                                size: size)),
                                       ),
                                     );
                                   }),
@@ -156,8 +161,8 @@ class _HomeBoatChallengeState extends State<HomeBoatChallenge>
                           if (_active != true) _TextHome(boat: boat)
                         ],
                       ),
-                      if (_active)...[
-                         Positioned(
+                      if (_active) ...[
+                        Positioned(
                             left: 15,
                             top: 0,
                             child: FloatingActionButton(
@@ -175,15 +180,13 @@ class _HomeBoatChallengeState extends State<HomeBoatChallenge>
                                   _active = false;
                                   animationController.reverse();
                                 })),
-                         Positioned(
+                        Positioned(
                             top: size.height * 0.22,
                             left: 0,
                             right: 0,
                             height: size.height * 0.78,
                             child: _PageDetails(boat: boat))
                       ]
-                       
-                        
                     ],
                   ));
                 },
@@ -213,7 +216,8 @@ class _ImageBoat extends StatelessWidget {
     required this.boat,
     required bool isDark,
     required this.size,
-  }) : _isDark = isDark, super(key: key);
+  })  : _isDark = isDark,
+        super(key: key);
 
   final Boat boat;
   final bool _isDark;
@@ -227,9 +231,7 @@ class _ImageBoat extends StatelessWidget {
         Opacity(
             child: Image.asset(
               boat.image,
-              color: _isDark
-                  ? Colors.white
-                  : Colors.black,
+              color: _isDark ? Colors.white : Colors.black,
               width: size.width * 0.415,
             ),
             opacity: 0.5),
@@ -327,9 +329,9 @@ class _PageDetails extends StatelessWidget {
                     tween: Tween(begin: 1.0, end: 0.0),
                     curve: Curves.elasticOut,
                     duration: const Duration(milliseconds: 1000),
-                    builder: (context,double valorTween, widget) {
+                    builder: (context, double valorTween, widget) {
                       return Transform.translate(
-                        offset: Offset(0.0, 50 * valorTween ),
+                        offset: Offset(0.0, 50 * valorTween),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -444,8 +446,8 @@ class _PageDetails extends StatelessWidget {
 class FeatureBoat extends StatelessWidget {
   const FeatureBoat({
     Key? key,
-   required this.type,
-   required this.fact,
+    required this.type,
+    required this.fact,
   }) : super(key: key);
   final String type;
   final String fact;

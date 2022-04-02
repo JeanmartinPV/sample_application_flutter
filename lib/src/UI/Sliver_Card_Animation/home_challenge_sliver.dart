@@ -1,6 +1,5 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter_sample_jpv/src/UI/Sliver_Card_Animation/widgets/background_sliver.dart';
 import 'package:flutter_sample_jpv/src/UI/Sliver_Card_Animation/widgets/body_sliver.dart';
 import 'package:flutter_sample_jpv/src/UI/Sliver_Card_Animation/widgets/button_back.dart';
@@ -96,11 +95,9 @@ class _AppBarNetflix extends SliverPersistentHeaderDelegate {
   }
 
   @override
-  // TODO: implement maxExtent
   double get maxExtent => maxExtended;
 
   @override
-  // TODO: implement minExtent
   double get minExtent => minExtended;
 
   @override

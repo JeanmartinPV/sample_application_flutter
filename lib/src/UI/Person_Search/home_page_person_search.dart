@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_sample_jpv/src/UI/Person_Search/details_page.dart';
 import 'package:flutter_sample_jpv/src/UI/Person_Search/services/services.dart';
@@ -13,7 +11,6 @@ class HomePersonSearch extends StatefulWidget {
 }
 
 class _HomePersonSearchState extends State<HomePersonSearch> {
-
   @override
   Widget build(BuildContext context) {
     final requests = Provider.of<Services>(context);
@@ -186,13 +183,12 @@ class _HomePersonSearchState extends State<HomePersonSearch> {
                               child: Material(
                                 elevation: 5.0,
                                 color: Color(0xffFFCD22),
-
                                 shape: RoundedRectangleBorder(
                                     borderRadius: borderRadiusButton),
                                 child: InkWell(
                                   borderRadius: borderRadiusButton,
                                   onTap: () {
-                                    requests.getResult(requests.dni); 
+                                    requests.getResult(requests.dni);
                                   },
                                   child: Container(
                                     decoration: BoxDecoration(
@@ -255,9 +251,7 @@ class _HomePersonSearchState extends State<HomePersonSearch> {
             ),
             color: Color(0xffFFCD22),
           ),
-          child: requests.isLoading ?  DetailsPageSearch()
-             
-            : Container(),
+          child: requests.isLoading ? DetailsPageSearch() : Container(),
         ),
       ),
     );

@@ -30,6 +30,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   provider: ^5.0.0 #state manager
   http: ^0.13.0 #requests http
+  google_fonts: ^2.2.0
 
 dev_dependencies:
   flutter_test:
@@ -54,6 +55,7 @@ flutter:
     - assets/boats/
     - assets/sliver/
     - assets/shoes/
+    - assets/sliver_with_scrollable_tabs/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
