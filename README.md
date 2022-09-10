@@ -17,4 +17,11 @@ puedes utilizar el repositorio para lo que desees, si te gusta, deja una estrell
 |------------|-------------|
 |![shoes](https://user-images.githubusercontent.com/42988089/145924340-69d7a4c6-3095-4e2c-b838-19f8f2468cea.gif)|![fe](https://user-images.githubusercontent.com/42988089/161367973-16a62497-1702-4df4-ab81-08590fe262b4.gif)|
 
+|ONBOARNING| 
+|------------|
+|![previe_app](https://user-images.githubusercontent.com/42988089/189463493-fdf96a94-9edd-459b-81d4-5b3ad86d18aa.gif)|
+
+
+
+
 
