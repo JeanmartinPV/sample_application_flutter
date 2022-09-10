@@ -3,6 +3,7 @@ import 'package:jpv_flutter/src/Widgets/CardButton.dart';
 import 'package:jpv_flutter/src/ui/challenge_boats/home_boat.dart';
 import 'package:jpv_flutter/src/ui/food_delivery/init_home_delivery.dart';
 import 'package:jpv_flutter/src/ui/nike_shoes/pages/home_page.dart';
+import 'package:jpv_flutter/src/ui/onboarning/feature/onboarning_animation.dart';
 import 'package:jpv_flutter/src/ui/person_search/init.dart';
 import 'package:jpv_flutter/src/ui/sliver_card_animation/home_challenge_sliver.dart';
 import 'package:jpv_flutter/src/ui/sliver_with_tab/home_sliver_with_scrollable_tabs.dart';
@@ -73,6 +74,14 @@ class _UiFlutterState extends State<UiFlutter> {
                 onCardTap(const HomeSliverWithTab());
               },
               url: 'assets/sliver_with_scrollable_tabs/poster_challenge.jpg',
+            ),
+            CardButtom(
+              title: 'onboarning',
+              description: 'Custom Painter Animated',
+              actionTap: () {
+                onCardTap(const OnBoardingAnimation());
+              },
+              url: 'assets/onboarning/onboarning_screen.png',
             ),
           ],
         ));

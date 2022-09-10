@@ -71,6 +71,7 @@ flutter:
     - assets/sliver/
     - assets/shoes/
     - assets/sliver_with_scrollable_tabs/
+    - assets/onboarning/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
